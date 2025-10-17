@@ -1,4 +1,4 @@
-#Program _a01
+#PROGRAM _a01
 DATA 
     INT32_t _a11, _b11, _c11, _m11, 
 
@@ -35,3 +35,4 @@ START
     }
 
 FINISH
+
