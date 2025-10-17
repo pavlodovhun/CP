@@ -1,0 +1,17 @@
+#Program _a01
+DATA 
+    INT32_t _a11, _b11, _a12, _b12, _x11, 
+
+START
+    READ (_a11) 
+    READ (_b11) 
+    FOR _a11 :> _a12 TO _b11 DO
+        WRITE (_a12 MUL _a12)
+
+    0 :> _x11
+    FOR 1 :> _a12 TO _a11 DO
+        FOR 1 :> _b12 TO _b11 DO
+            _x11 ADD 1 :> _x11
+
+    WRITE (_x11)
+FINISH
