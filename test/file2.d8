@@ -1,6 +1,6 @@
 #PROGRAM _a01;
 DATA 
-    INT32_t _a11, _b11, _c11, _m11, 
+    INT32_t _a11, _b11, _c11, _m11;
 
 START
     READ (_a11) 
@@ -23,17 +23,18 @@ START
     }
 
     IF !(_a11  GE 0) OR !(_b11 GE 0) OR !(_c11 GE 0) {
-        WRITE (-1)
+        WRITE (SUB 1)
     } ELSE {
         WRITE (0)
     }
 
-    IF (_a11 GE (_b11 ADD CCCCCCC)) {
+    IF (_a11 GE (_b11 ADD _c11)) {
         WRITE 10
     } ELSE {
         WRITE 0
     }
 
 FINISH
+
 
 
