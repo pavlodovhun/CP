@@ -1,4 +1,4 @@
-#PROGRAM _a01;
+PROGRAM _a01;
 DATA 
     INT32_t _a11, _b11, _c11, _m11;
 
@@ -22,7 +22,7 @@ START
         WRITE (0)
     }
 
-    IF !(_a11  GE 0) OR !(_b11 GE 0) OR !(_c11 GE 0) {
+    IF !(_a11  GE 0) | !(_b11 GE 0) | !(_c11 GE 0) {
         WRITE (SUB 1)
     } ELSE {
         WRITE (0)
@@ -35,6 +35,7 @@ START
     }
 
 FINISH
+
 
 
 
