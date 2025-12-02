@@ -1,4 +1,4 @@
-#PROGRAM _a01;
+PROGRAM _a01;
 DATA 
     INT32_t _a11, _b11, _a12, _b12, _x11;
 
@@ -15,6 +15,7 @@ START
 
     WRITE (_x11)
 FINISH
+
 
 
 
