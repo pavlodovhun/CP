@@ -1,0 +1,20 @@
+PROGRAM _a01;
+DATA 
+    INT32_t _a11, _b11, _x11, _y11; 
+
+START
+    READ (_a11) 
+    READ (_b11) 
+    
+    WRITE (_a11 ADD _b11)
+    WRITE (_a11 SUB _b11)
+    WRITE (_a11 MUL _b11)
+    WRITE (_a11 DIV _b11)
+    WRITE (_a11 MOD _b11)
+
+    (_a11 SUB _b11) MUL 10 ADD (_a11 ADD _b11) DIV 10 :> _x11
+    _x11 ADD _x11 MOD 10 :> _y11 
+
+    WRITE (_x11)
+    WRITE (_y11)
+FINISH
