@@ -605,8 +605,7 @@ binary_action____iteration_after_two
         tokenMOD = "MOD" >> STRICT_BOUNDARIES;
         tokenGROUPEXPRESSIONBEGIN = "(" >> BOUNDARIES;
         tokenGROUPEXPRESSIONEND = ")" >> BOUNDARIES;
-        tokenRLBIND = ":>" >> BOUNDARIES;
-        tokenLRBIND = "=:" >> BOUNDARIES;
+        tokenLRBIND = ":>" >> BOUNDARIES;
         tokenELSE = "ELSE" >> STRICT_BOUNDARIES;
         tokenIF = "IF" >> STRICT_BOUNDARIES;
         tokenDO = "DO" >> STRICT_BOUNDARIES;
@@ -940,4 +939,5 @@ int main(int argc, char* argv[]) {
 #endif
 
     return 0;
+
 }
